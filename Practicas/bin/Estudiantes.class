@@ -1,0 +1,29 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+public class Estudiantes {
+   private String nombre;
+   private String matricula;
+   private double[] notas = new double[5];
+
+   public Estudiantes() {
+   }
+
+   public String getNombre() {
+      return this.nombre;
+   }
+
+   public void setNombre(String nombre) {
+      this.nombre = nombre;
+   }
+
+   public String getMatricula() {
+      return this.matricula;
+   }
+
+   public void setMatricula(String matricula) {
+      this.matricula = matricula;
+   }
+
+   public double[] getNotas() {
+      return this.notas;
+   }
+}
