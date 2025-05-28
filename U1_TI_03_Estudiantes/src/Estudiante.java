@@ -1,4 +1,4 @@
-public class Estudiantes {
+public class Estudiante {
     private String nombre;
     private String matricula;
     private double[] notas = new double[5];
@@ -15,19 +15,18 @@ public class Estudiantes {
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
-    public double[] getNotas() {
-        return notas;
+
+     public void setNota(int i, double nota) {
+        if (i >= 0 && i < notas.length) {
+            notas[i] = nota;
+        }
     }
-    public void setNotas(double[] notas) {
-     this.notas = notas;
-    }
-    
-    public double getNota(int i){
+
+    public double getNota(int i) {
         if (i >= 0 && i < notas.length) {
             return notas[i];
-        } else {
-            return 0;
         }
+        return 0;
     }
 
     public double calcularPromedio(){
