@@ -15,7 +15,8 @@ public class App {
             double nota = scanner.nextDouble();
             estudiante.getNotas()[i] = nota;
         }
-
+        System.out.println("Nombre: " + estudiante.getNombre());
+        System.out.println("Matrícula: " + estudiante.getMatricula());
         System.out.println("Promedio: " + estudiante.calcularPromedio());
         System.out.println("Aprobado: " + (estudiante.aprobar() ? "Sí" : "No"));
         
